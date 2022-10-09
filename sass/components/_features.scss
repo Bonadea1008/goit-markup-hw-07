@@ -31,12 +31,11 @@
 }
 
 .features-title {
-  letter-spacing: 0.03em;
+  @include font(14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
 
 .features-text {
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.71, 0.03em);
 }

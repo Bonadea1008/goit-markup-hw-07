@@ -6,8 +6,7 @@
   min-width: 264px;
   margin-bottom: 50px;
 
-  font-size: 36px;
-  line-height: 1.16;
+  @include font(36px, 1.16, 0.03em);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -24,19 +23,15 @@
 }
 
 .team__name {
+  @include font(16px, 1.19, 0.03em);
   margin-bottom: 10px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
 .team__profession {
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(16px, 1.19, 0.03em);
   text-align: center;
   color: var(--secondary-text-color);
 }

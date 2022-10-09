@@ -14,10 +14,8 @@ ul {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  font-family: $primaryFont;
+  @include font(14px, 1.14, 0.02em);
   color: var(--secondary-text-color);
   background-color: var(--background-primary);
 }
@@ -27,6 +25,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;

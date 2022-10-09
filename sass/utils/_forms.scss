@@ -41,11 +41,9 @@
 }
 
 .form-title {
+  @include font(20px, 1.15, 0.03em);
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
 }
@@ -58,10 +56,8 @@
 }
 
 .form-label {
+  @include font(12px, 1.17, 0.01em);
   margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
   color: var(--secondary-text-color);
 }
 
@@ -98,14 +94,13 @@
 }
 
 .user-comments {
+  @include font(12px, 1.17, 0.01em);
   resize: none;
   width: 448px;
   height: 120px;
   padding-left: 16px;
   padding-top: 12px;
   font-family: inherit;
-  font-size: 12px;
-  letter-spacing: 0.01em;
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -126,11 +121,9 @@
   margin-bottom: 30px;
 
   &-label {
+    @include font(14px, 1.71, 0.03em);
     display: flex;
     align-items: center;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
     color: var(--secondary-text-color);
   }
 
@@ -187,9 +180,7 @@
   }
 
   &::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    @include font(16px, 1.25, 0.03em);
     color: rgba(255, 255, 255, 0.6);
   }
 }
